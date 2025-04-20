@@ -1,14 +1,18 @@
 {
+  "homepage": "https://adityabagus-sptr.github.io/ucapan-hbd-shifa",
   "name": "ucapan-hbd-shifa",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
+
   "dependencies": {
     "canvas-confetti": "^1.9.3",
     "emailjs-com": "^3.2.0",
